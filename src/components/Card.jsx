@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import savedContext from '../context/savedContext'
-import { BsHeart, BsHeartFill } from 'react-icons/bs'
 
 import '../styles/card.css'
 import SaveButton from './SaveButton'
