@@ -1,0 +1,51 @@
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--app-bar-height);
+  padding: 0 2rem;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem 0 0;
+}
+
+.logo__image {
+  width: 50px;
+}
+
+.logo__text {
+  margin: 0 0 0 1rem;
+  font-size: 1.6rem;
+  background: linear-gradient(to right, rgb(41, 109, 172), rgb(240, 106, 106));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 375px) {
+  .app-bar {
+    padding: 0 20px;
+  }
+
+  .logo {
+    margin: 0 1rem 0 0;
+  }
+
+  .logo__image {
+    width: 38px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo__text {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: url('./assets/fonts/OpenSans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  src: url('./assets/fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+.app-bar .logo {
+  font-family: 'Pacifico';
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #444445;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+button,
+input {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
