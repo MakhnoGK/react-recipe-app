@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import useSearch from './hooks/useSearch'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Modal from './components/Modal'
-import SearchResults from './components/SearchResults'
-import savedContext from './context/savedContext'
-import searchContext from './context/searchContext'
+import useSearch from '../hooks/useSearch'
+import Header from './Header'
+import Footer from './Footer'
+import Modal from './Modal'
+import SearchResults from './SearchResults'
+import savedContext from '../context/savedContext'
+import searchContext from '../context/searchContext'
 
-import './App.css'
-import useSavedRecipes from './hooks/useSavedRecipes'
-import SavedRecipes from './components/SavedRecipes'
+import '../styles/app.css'
+import useSavedRecipes from '../hooks/useSavedRecipes'
+import SavedRecipes from './SavedRecipes'
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false)

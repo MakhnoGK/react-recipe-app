@@ -25,6 +25,8 @@ body {
 
 main {
   flex: 1;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .content-wrapper {
