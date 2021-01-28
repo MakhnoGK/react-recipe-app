@@ -1,5 +1,6 @@
 @use 'mixins';
 @use 'colors';
+@use 'variables';
 
 .app-bar {
     @include mixins.flex(space-between, center);
@@ -11,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--app-bar-height);
+    height: variables.$appbar-height;
     padding: 0 2rem;
     background-color: #fff;
     box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1);

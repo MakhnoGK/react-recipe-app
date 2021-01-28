@@ -1,9 +1,6 @@
 @use 'colors';
 @use 'mixins';
-
-:root {
-    --app-bar-height: 70px;
-}
+@use 'variables';
 
 * {
     box-sizing: border-box;
@@ -38,7 +35,7 @@ main {
 
     flex: 1;
     margin: 0 auto;
-    margin-top: calc(var(--app-bar-height) + 10px);
+    margin-top: calc(#{variables.$appbar-height} + 10px);
     width: 900px;
     max-width: 100%;
 }

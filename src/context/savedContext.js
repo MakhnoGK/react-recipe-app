@@ -1,7 +1,7 @@
-import { createContext } from 'react'
+import { createContext } from 'react';
 
 const savedContext = createContext(() => {
-  return {}
-})
+    return {};
+});
 
-export default savedContext
+export default savedContext;
