@@ -1,0 +1,53 @@
+@use 'mixins';
+@use 'colors';
+
+.app-bar {
+    @include mixins.flex(space-between, center);
+    @include mixins.media('max-width', 375px) {
+      padding: 0 20px;
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--app-bar-height);
+    padding: 0 2rem;
+    background-color: #fff;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    
+}
+
+.logo {
+    @include mixins.flex(normal, center);
+    @include mixins.media('max-width', 375px) {
+      margin: 0 1rem 0 0;
+    }
+    
+    margin: 0 2rem 0 0;
+
+    &__image {
+        @include mixins.media('max-width', 375px) {
+          width: 38px;
+        }
+
+        width: 50px;
+    }
+
+    &__text {
+        margin: 0 0 0 1rem;
+        font-size: 1.6rem;
+        background: linear-gradient(
+            to right,
+            colors.$clr-blue,
+            colors.$clr-red-light
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include mixins.media('max-width', 600px) {
+            display: none;
+        }
+    }
+}

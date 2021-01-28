@@ -1,7 +1,5 @@
 import { useContext } from 'react'
 import savedContext from '../context/savedContext'
-
-import '../styles/card.css'
 import SaveButton from './SaveButton'
 
 function Card({ recipe, variant = 'vertical' }) {

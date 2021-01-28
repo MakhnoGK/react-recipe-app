@@ -1,7 +1,5 @@
 import Search from './Search'
-
 import dietImage from '../assets/images/diet.svg'
-import '../styles/header.css'
 
 function Header({ getRandom, setSearchQuery }) {
   return (

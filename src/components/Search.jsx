@@ -1,8 +1,6 @@
 import { MdSearch } from 'react-icons/md'
 import { FaDice } from 'react-icons/fa'
 
-import '../styles/search.css'
-
 function Search({ getRandom, setSearchQuery }) {
   const handleSubmit = (e) => {
     e.preventDefault()

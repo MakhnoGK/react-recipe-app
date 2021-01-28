@@ -1,0 +1,16 @@
+@mixin media($type: 'min-width', $size, $orientation: portrait) {
+    @media screen and (#{$type}: $size) and (orientation: $orientation) {
+        @content;
+    }
+}
+
+@mixin flex($justifyContent: normal, $alignItems: normal, $direction: row) {
+    display: flex;
+    justify-content: $justifyContent;
+    flex-direction: $direction;
+    align-items: $alignItems;
+}
+
+@mixin gridAF($min, $max) {
+    grid-template-columns: repeat(auto-fill, minmax($min, $max));
+}

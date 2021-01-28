@@ -2,8 +2,6 @@ import { useContext, useEffect } from 'react'
 import mapIngredients from '../utils/mapIngredients'
 import mapInstructions from '../utils/mapInstructions'
 import { FaTimes } from 'react-icons/fa'
-
-import '../styles/modal.css'
 import savedContext from '../context/savedContext'
 import SaveButton from './SaveButton'
 
